@@ -7,7 +7,7 @@
 <style>
 body {
 background-color: #EBEBEB;
-font-family: -apple-system, BlinkMacSystemFont, ‘Helvetica Neue’, Arial, sans-serif;
+font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
 min-height: 100vh;
 display: flex;
 flex-direction: column;
@@ -151,25 +151,25 @@ color: #333;
 </head>
 <body>
 
-<div class=“slogan”>
+<div class="slogan">
 <h1>Designing Transformation & Growth Through Human-Centered Experiences</h1>
 <p>用体验创新 赋能变革与成长</p>
 </div>
 
-<div class=“scene”>
-<div class=“element” onclick=“openModal(‘figurine’)”>
-<img src=“images/figurine.png” alt=“Yihan Xu Figurine”>
-<span class=“tooltip”>点击了解我 | About Me</span>
+<div class="scene">
+<div class="element" onclick="openModal('figurine')">
+<img src="images/figurine.png" alt="Yihan Xu Figurine">
+<span class="tooltip">点击了解我 | About Me</span>
 </div>
-<div class=“element” onclick=“openModal(‘tools’)”>
-<img src=“images/tools.png” alt=“Methodology Tools”>
-<span class=“tooltip”>我的方法论 | My Methodology</span>
+<div class="element" onclick="openModal('tools')">
+<img src="images/tools.png" alt="Methodology Tools">
+<span class="tooltip">我的方法论 | My Methodology</span>
 </div>
 </div>
 
-<div class=“modal-overlay” id=“modal-figurine”>
-<div class=“modal-card”>
-<button class=“close-btn” onclick=“closeModal(‘figurine’)”>&times;</button>
+<div class="modal-overlay" id="modal-figurine">
+<div class="modal-card">
+<button class="close-btn" onclick="closeModal('figurine')">&times;</button>
 <h2>Yihan Xu 徐一涵</h2>
 <p><strong>Experience Innovation Practitioner</strong></p>
 <p>我是一位体验翻译者——擅长将战略意图转化为人可以走进去的体验，通过设计驱动组织变革与个人成长。</p>
@@ -178,9 +178,9 @@ color: #333;
 </div>
 </div>
 
-<div class=“modal-overlay” id=“modal-tools”>
-<div class=“modal-card”>
-<button class=“close-btn” onclick=“closeModal(‘tools’)”>&times;</button>
+<div class="modal-overlay" id="modal-tools">
+<div class="modal-card">
+<button class="close-btn" onclick="closeModal('tools')">&times;</button>
 <h2>From Insight to Impact</h2>
 <p><strong>三节望远镜 = 我的核心方法论</strong></p>
 <p>🔍 Insight — 深度洞察人本需求，发现隐性障碍与真实动机</p>
@@ -191,15 +191,15 @@ color: #333;
 
 <script>
 function openModal(id) {
-document.getElementById(‘modal-’ + id).classList.add(‘active’);
+document.getElementById('modal-' + id).classList.add('active');
 }
 function closeModal(id) {
-document.getElementById(‘modal-’ + id).classList.remove(‘active’);
+document.getElementById('modal-' + id).classList.remove('active');
 }
-document.querySelectorAll(‘.modal-overlay’).forEach(function(overlay) {
-overlay.addEventListener(‘click’, function(e) {
+document.querySelectorAll('.modal-overlay').forEach(function(overlay) {
+overlay.addEventListener('click', function(e) {
 if (e.target === this) {
-this.classList.remove(‘active’);
+this.classList.remove('active');
 }
 });
 });
